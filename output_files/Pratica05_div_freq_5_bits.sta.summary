@@ -1,0 +1,185 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Pratica05_div_freq_1_bit:inst1|inst2'
+Slack : -0.018
+TNS   : -0.018
+
+Type  : Slow 1200mV 85C Model Setup 'ck'
+Slack : -0.002
+TNS   : -0.002
+
+Type  : Slow 1200mV 85C Model Setup 'Pratica05_div_freq_1_bit:inst2|inst2'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'Pratica05_div_freq_1_bit:inst|inst2'
+Slack : 0.204
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'Pratica05_div_freq_1_bit:inst3|inst2'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Pratica05_div_freq_1_bit:inst|inst2'
+Slack : 0.001
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Pratica05_div_freq_1_bit:inst2|inst2'
+Slack : 0.010
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ck'
+Slack : 0.075
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Pratica05_div_freq_1_bit:inst1|inst2'
+Slack : 0.080
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Pratica05_div_freq_1_bit:inst3|inst2'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ck'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Pratica05_div_freq_1_bit:inst1|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Pratica05_div_freq_1_bit:inst2|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Pratica05_div_freq_1_bit:inst3|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Pratica05_div_freq_1_bit:inst|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Setup 'Pratica05_div_freq_1_bit:inst1|inst2'
+Slack : 0.050
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'ck'
+Slack : 0.067
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Pratica05_div_freq_1_bit:inst2|inst2'
+Slack : 0.226
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Pratica05_div_freq_1_bit:inst|inst2'
+Slack : 0.236
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Pratica05_div_freq_1_bit:inst3|inst2'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Pratica05_div_freq_1_bit:inst|inst2'
+Slack : -0.012
+TNS   : -0.012
+
+Type  : Slow 1200mV 0C Model Hold 'Pratica05_div_freq_1_bit:inst2|inst2'
+Slack : -0.003
+TNS   : -0.003
+
+Type  : Slow 1200mV 0C Model Hold 'ck'
+Slack : 0.035
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Pratica05_div_freq_1_bit:inst1|inst2'
+Slack : 0.051
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Pratica05_div_freq_1_bit:inst3|inst2'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ck'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Pratica05_div_freq_1_bit:inst1|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Pratica05_div_freq_1_bit:inst2|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Pratica05_div_freq_1_bit:inst3|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Pratica05_div_freq_1_bit:inst|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Setup 'ck'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Pratica05_div_freq_1_bit:inst1|inst2'
+Slack : 0.209
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Pratica05_div_freq_1_bit:inst2|inst2'
+Slack : 0.351
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Pratica05_div_freq_1_bit:inst|inst2'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Pratica05_div_freq_1_bit:inst3|inst2'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Pratica05_div_freq_1_bit:inst|inst2'
+Slack : -0.012
+TNS   : -0.012
+
+Type  : Fast 1200mV 0C Model Hold 'Pratica05_div_freq_1_bit:inst2|inst2'
+Slack : -0.005
+TNS   : -0.005
+
+Type  : Fast 1200mV 0C Model Hold 'Pratica05_div_freq_1_bit:inst1|inst2'
+Slack : 0.051
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ck'
+Slack : 0.055
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Pratica05_div_freq_1_bit:inst3|inst2'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ck'
+Slack : -3.000
+TNS   : -4.080
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Pratica05_div_freq_1_bit:inst1|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Pratica05_div_freq_1_bit:inst2|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Pratica05_div_freq_1_bit:inst3|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Pratica05_div_freq_1_bit:inst|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

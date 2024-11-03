@@ -1,0 +1,6 @@
+|Pratica05_div_freq_1_bit
+saida <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+rst => inst3.IN0
+ck => inst2.CLK
+
+

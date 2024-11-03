@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/aluno/Desktop/CircuitosDigitais/Pratica01.bdf
+source_file = 1, C:/Users/aluno/Desktop/CircuitosDigitais/Pratica01.02.bdf
+source_file = 1, C:/Users/aluno/Desktop/CircuitosDigitais/db/Pratica01.cbx.xml
+design_name = Pratica01
+instance = comp, \co~output\, co~output, Pratica01, 1
+instance = comp, \s~output\, s~output, Pratica01, 1
+instance = comp, \b~input\, b~input, Pratica01, 1
+instance = comp, \a~input\, a~input, Pratica01, 1

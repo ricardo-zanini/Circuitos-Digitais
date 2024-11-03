@@ -1,0 +1,101 @@
+|Pratica02_mux_2x1_8bits
+s[0] <= Pratica02_mux_2x1_1bit:inst8.s
+s[1] <= Pratica02_mux_2x1_1bit:inst9.s
+s[2] <= Pratica02_mux_2x1_1bit:inst10.s
+s[3] <= Pratica02_mux_2x1_1bit:inst11.s
+s[4] <= Pratica02_mux_2x1_1bit:inst12.s
+s[5] <= Pratica02_mux_2x1_1bit:inst13.s
+s[6] <= Pratica02_mux_2x1_1bit:inst14.s
+s[7] <= Pratica02_mux_2x1_1bit:inst15.s
+a[0] => Pratica02_mux_2x1_1bit:inst8.e0
+a[1] => Pratica02_mux_2x1_1bit:inst9.e0
+a[2] => Pratica02_mux_2x1_1bit:inst10.e0
+a[3] => ~NO_FANOUT~
+a[4] => Pratica02_mux_2x1_1bit:inst12.e0
+a[5] => Pratica02_mux_2x1_1bit:inst13.e0
+a[6] => Pratica02_mux_2x1_1bit:inst14.e0
+a[7] => Pratica02_mux_2x1_1bit:inst14.e1
+a[7] => Pratica02_mux_2x1_1bit:inst15.e0
+c => Pratica02_mux_2x1_1bit:inst8.c
+c => Pratica02_mux_2x1_1bit:inst9.c
+c => Pratica02_mux_2x1_1bit:inst10.c
+c => Pratica02_mux_2x1_1bit:inst11.c
+c => Pratica02_mux_2x1_1bit:inst13.c
+c => Pratica02_mux_2x1_1bit:inst14.c
+c => Pratica02_mux_2x1_1bit:inst15.c
+c => Pratica02_mux_2x1_1bit:inst12.c
+b[0] => Pratica02_mux_2x1_1bit:inst8.e1
+b[1] => Pratica02_mux_2x1_1bit:inst9.e1
+b[2] => Pratica02_mux_2x1_1bit:inst10.e1
+b[3] => Pratica02_mux_2x1_1bit:inst11.e0
+b[3] => Pratica02_mux_2x1_1bit:inst11.e1
+b[4] => Pratica02_mux_2x1_1bit:inst12.e1
+b[5] => Pratica02_mux_2x1_1bit:inst13.e1
+b[6] => ~NO_FANOUT~
+b[7] => Pratica02_mux_2x1_1bit:inst15.e1
+
+
+|Pratica02_mux_2x1_8bits|Pratica02_mux_2x1_1bit:inst8
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+c => inst3.IN0
+c => inst.IN0
+e1 => inst3.IN1
+e0 => inst2.IN0
+
+
+|Pratica02_mux_2x1_8bits|Pratica02_mux_2x1_1bit:inst9
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+c => inst3.IN0
+c => inst.IN0
+e1 => inst3.IN1
+e0 => inst2.IN0
+
+
+|Pratica02_mux_2x1_8bits|Pratica02_mux_2x1_1bit:inst10
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+c => inst3.IN0
+c => inst.IN0
+e1 => inst3.IN1
+e0 => inst2.IN0
+
+
+|Pratica02_mux_2x1_8bits|Pratica02_mux_2x1_1bit:inst11
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+c => inst3.IN0
+c => inst.IN0
+e1 => inst3.IN1
+e0 => inst2.IN0
+
+
+|Pratica02_mux_2x1_8bits|Pratica02_mux_2x1_1bit:inst13
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+c => inst3.IN0
+c => inst.IN0
+e1 => inst3.IN1
+e0 => inst2.IN0
+
+
+|Pratica02_mux_2x1_8bits|Pratica02_mux_2x1_1bit:inst14
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+c => inst3.IN0
+c => inst.IN0
+e1 => inst3.IN1
+e0 => inst2.IN0
+
+
+|Pratica02_mux_2x1_8bits|Pratica02_mux_2x1_1bit:inst15
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+c => inst3.IN0
+c => inst.IN0
+e1 => inst3.IN1
+e0 => inst2.IN0
+
+
+|Pratica02_mux_2x1_8bits|Pratica02_mux_2x1_1bit:inst12
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+c => inst3.IN0
+c => inst.IN0
+e1 => inst3.IN1
+e0 => inst2.IN0
+
+

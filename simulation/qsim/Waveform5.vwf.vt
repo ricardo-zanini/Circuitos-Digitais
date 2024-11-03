@@ -1,0 +1,361 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "11/27/2023 20:41:31"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    Pratica06_cont_gen_1bit
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Pratica06_cont_gen_1bit_vlg_sample_tst(
+	c0,
+	c1,
+	ck,
+	d,
+	eand,
+	eor,
+	qant,
+	r,
+	sampler_tx
+);
+input  c0;
+input  c1;
+input  ck;
+input  d;
+input  eand;
+input  eor;
+input  qant;
+input  r;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(c0 or c1 or ck or d or eand or eor or qant or r)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module Pratica06_cont_gen_1bit_vlg_check_tst (
+	q,
+	sand,
+	sor,
+	sampler_rx
+);
+input  q;
+input  sand;
+input  sor;
+input sampler_rx;
+
+reg  q_expected;
+reg  sand_expected;
+reg  sor_expected;
+
+reg  q_prev;
+reg  sand_prev;
+reg  sor_prev;
+
+reg  q_expected_prev;
+reg  sand_expected_prev;
+reg  sor_expected_prev;
+
+reg  last_q_exp;
+reg  last_sand_exp;
+reg  last_sor_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:3] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 3'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	q_prev = q;
+	sand_prev = sand;
+	sor_prev = sor;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	q_expected_prev = q_expected;
+	sand_expected_prev = sand_expected;
+	sor_expected_prev = sor_expected;
+end
+
+
+
+// expected q
+initial
+begin
+	q_expected = 1'bX;
+end 
+
+// expected sand
+initial
+begin
+	sand_expected = 1'bX;
+end 
+
+// expected sor
+initial
+begin
+	sor_expected = 1'bX;
+end 
+// generate trigger
+always @(q_expected or q or sand_expected or sand or sor_expected or sor)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected q = %b | expected sand = %b | expected sor = %b | ",q_expected_prev,sand_expected_prev,sor_expected_prev);
+	$display("| real q = %b | real sand = %b | real sor = %b | ",q_prev,sand_prev,sor_prev);
+`endif
+	if (
+		( q_expected_prev !== 1'bx ) && ( q_prev !== q_expected_prev )
+		&& ((q_expected_prev !== last_q_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port q :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", q_expected_prev);
+		$display ("     Real value = %b", q_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_q_exp = q_expected_prev;
+	end
+	if (
+		( sand_expected_prev !== 1'bx ) && ( sand_prev !== sand_expected_prev )
+		&& ((sand_expected_prev !== last_sand_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port sand :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", sand_expected_prev);
+		$display ("     Real value = %b", sand_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_sand_exp = sand_expected_prev;
+	end
+	if (
+		( sor_expected_prev !== 1'bx ) && ( sor_prev !== sor_expected_prev )
+		&& ((sor_expected_prev !== last_sor_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port sor :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", sor_expected_prev);
+		$display ("     Real value = %b", sor_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_sor_exp = sor_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module Pratica06_cont_gen_1bit_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg c0;
+reg c1;
+reg ck;
+reg d;
+reg eand;
+reg eor;
+reg qant;
+reg r;
+// wires                                               
+wire q;
+wire sand;
+wire sor;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+Pratica06_cont_gen_1bit i1 (
+// port map - connection between master ports and signals/registers   
+	.c0(c0),
+	.c1(c1),
+	.ck(ck),
+	.d(d),
+	.eand(eand),
+	.eor(eor),
+	.q(q),
+	.qant(qant),
+	.r(r),
+	.sand(sand),
+	.sor(sor)
+);
+
+// c0
+always
+begin
+	c0 = 1'b0;
+	c0 = #20000 1'b1;
+	#20000;
+end 
+
+// c1
+initial
+begin
+	repeat(12)
+	begin
+		c1 = 1'b0;
+		c1 = #40000 1'b1;
+		# 40000;
+	end
+	c1 = 1'b0;
+end 
+
+// ck
+initial
+begin
+	repeat(16)
+	begin
+		ck = 1'b0;
+		ck = #30000 1'b1;
+		# 30000;
+	end
+	ck = 1'b0;
+	ck = #30000 1'b1;
+end 
+
+// d
+always
+begin
+	d = 1'b0;
+	d = #20000 1'b1;
+	#20000;
+end 
+
+// eand
+initial
+begin
+	eand = 1'b0;
+	eand = #70000 1'b1;
+	# 60000;
+	repeat(7)
+	begin
+		eand = 1'b0;
+		eand = #60000 1'b1;
+		# 60000;
+	end
+	eand = 1'b0;
+end 
+
+// eor
+initial
+begin
+	repeat(4)
+	begin
+		eor = 1'b0;
+		eor = #120000 1'b1;
+		# 120000;
+	end
+	eor = 1'b0;
+end 
+
+// qant
+initial
+begin
+	repeat(16)
+	begin
+		qant = 1'b0;
+		qant = #30000 1'b1;
+		# 30000;
+	end
+	qant = 1'b0;
+	qant = #30000 1'b1;
+end 
+
+// r
+initial
+begin
+	r = 1'b0;
+	r = #530000 1'b1;
+end 
+
+Pratica06_cont_gen_1bit_vlg_sample_tst tb_sample (
+	.c0(c0),
+	.c1(c1),
+	.ck(ck),
+	.d(d),
+	.eand(eand),
+	.eor(eor),
+	.qant(qant),
+	.r(r),
+	.sampler_tx(sampler)
+);
+
+Pratica06_cont_gen_1bit_vlg_check_tst tb_out(
+	.q(q),
+	.sand(sand),
+	.sor(sor),
+	.sampler_rx(sampler)
+);
+endmodule
+

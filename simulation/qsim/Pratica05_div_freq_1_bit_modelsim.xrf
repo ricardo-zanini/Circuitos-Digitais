@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/CircuitosDigitais/Pratica05_div_freq_1_bit.bdf
+source_file = 1, C:/CircuitosDigitais/Waveform1.vwf
+source_file = 1, C:/CircuitosDigitais/db/Pratica05_div_freq_1_bit.cbx.xml
+design_name = Pratica05_div_freq_1_bit
+instance = comp, \saida~output , saida~output, Pratica05_div_freq_1_bit, 1
+instance = comp, \ck~input , ck~input, Pratica05_div_freq_1_bit, 1
+instance = comp, \inst2~0 , inst2~0, Pratica05_div_freq_1_bit, 1
+instance = comp, \rst~input , rst~input, Pratica05_div_freq_1_bit, 1

@@ -1,0 +1,143 @@
+|Pratica05_reg_5_bits
+q[0] <= Pratica05_reg_1_bit:inst.q
+q[1] <= Pratica05_reg_1_bit:inst2.q
+q[2] <= Pratica05_reg_1_bit:inst3.q
+q[3] <= Pratica05_reg_1_bit:inst4.q
+q[4] <= Pratica05_reg_1_bit:inst5.q
+d[0] => Pratica05_reg_1_bit:inst.d
+d[1] => Pratica05_reg_1_bit:inst2.d
+d[2] => Pratica05_reg_1_bit:inst3.d
+d[3] => Pratica05_reg_1_bit:inst4.d
+d[4] => Pratica05_reg_1_bit:inst5.d
+en => Pratica05_reg_1_bit:inst.en
+en => Pratica05_reg_1_bit:inst2.en
+en => Pratica05_reg_1_bit:inst3.en
+en => Pratica05_reg_1_bit:inst4.en
+en => Pratica05_reg_1_bit:inst5.en
+ck => Pratica05_reg_1_bit:inst.ck
+ck => Pratica05_reg_1_bit:inst2.ck
+ck => Pratica05_reg_1_bit:inst3.ck
+ck => Pratica05_reg_1_bit:inst4.ck
+ck => Pratica05_reg_1_bit:inst5.ck
+rst => Pratica05_reg_1_bit:inst.rst
+rst => Pratica05_reg_1_bit:inst2.rst
+rst => Pratica05_reg_1_bit:inst3.rst
+rst => Pratica05_reg_1_bit:inst4.rst
+rst => Pratica05_reg_1_bit:inst5.rst
+
+
+|Pratica05_reg_5_bits|Pratica05_reg_1_bit:inst
+q <= Pratica05_DFF_1_bit:inst2.saida
+en => Pratica02_mux_2x1_1bit:inst.c
+d => Pratica02_mux_2x1_1bit:inst.e1
+ck => Pratica05_DFF_1_bit:inst2.ck
+rst => Pratica05_DFF_1_bit:inst2.rst
+
+
+|Pratica05_reg_5_bits|Pratica05_reg_1_bit:inst|Pratica05_DFF_1_bit:inst2
+saida <= inst.DB_MAX_OUTPUT_PORT_TYPE
+rst => inst2.IN0
+ck => inst.CLK
+d => inst.DATAIN
+
+
+|Pratica05_reg_5_bits|Pratica05_reg_1_bit:inst|Pratica02_mux_2x1_1bit:inst
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+c => inst3.IN0
+c => inst.IN0
+e1 => inst3.IN1
+e0 => inst2.IN0
+
+
+|Pratica05_reg_5_bits|Pratica05_reg_1_bit:inst2
+q <= Pratica05_DFF_1_bit:inst2.saida
+en => Pratica02_mux_2x1_1bit:inst.c
+d => Pratica02_mux_2x1_1bit:inst.e1
+ck => Pratica05_DFF_1_bit:inst2.ck
+rst => Pratica05_DFF_1_bit:inst2.rst
+
+
+|Pratica05_reg_5_bits|Pratica05_reg_1_bit:inst2|Pratica05_DFF_1_bit:inst2
+saida <= inst.DB_MAX_OUTPUT_PORT_TYPE
+rst => inst2.IN0
+ck => inst.CLK
+d => inst.DATAIN
+
+
+|Pratica05_reg_5_bits|Pratica05_reg_1_bit:inst2|Pratica02_mux_2x1_1bit:inst
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+c => inst3.IN0
+c => inst.IN0
+e1 => inst3.IN1
+e0 => inst2.IN0
+
+
+|Pratica05_reg_5_bits|Pratica05_reg_1_bit:inst3
+q <= Pratica05_DFF_1_bit:inst2.saida
+en => Pratica02_mux_2x1_1bit:inst.c
+d => Pratica02_mux_2x1_1bit:inst.e1
+ck => Pratica05_DFF_1_bit:inst2.ck
+rst => Pratica05_DFF_1_bit:inst2.rst
+
+
+|Pratica05_reg_5_bits|Pratica05_reg_1_bit:inst3|Pratica05_DFF_1_bit:inst2
+saida <= inst.DB_MAX_OUTPUT_PORT_TYPE
+rst => inst2.IN0
+ck => inst.CLK
+d => inst.DATAIN
+
+
+|Pratica05_reg_5_bits|Pratica05_reg_1_bit:inst3|Pratica02_mux_2x1_1bit:inst
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+c => inst3.IN0
+c => inst.IN0
+e1 => inst3.IN1
+e0 => inst2.IN0
+
+
+|Pratica05_reg_5_bits|Pratica05_reg_1_bit:inst4
+q <= Pratica05_DFF_1_bit:inst2.saida
+en => Pratica02_mux_2x1_1bit:inst.c
+d => Pratica02_mux_2x1_1bit:inst.e1
+ck => Pratica05_DFF_1_bit:inst2.ck
+rst => Pratica05_DFF_1_bit:inst2.rst
+
+
+|Pratica05_reg_5_bits|Pratica05_reg_1_bit:inst4|Pratica05_DFF_1_bit:inst2
+saida <= inst.DB_MAX_OUTPUT_PORT_TYPE
+rst => inst2.IN0
+ck => inst.CLK
+d => inst.DATAIN
+
+
+|Pratica05_reg_5_bits|Pratica05_reg_1_bit:inst4|Pratica02_mux_2x1_1bit:inst
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+c => inst3.IN0
+c => inst.IN0
+e1 => inst3.IN1
+e0 => inst2.IN0
+
+
+|Pratica05_reg_5_bits|Pratica05_reg_1_bit:inst5
+q <= Pratica05_DFF_1_bit:inst2.saida
+en => Pratica02_mux_2x1_1bit:inst.c
+d => Pratica02_mux_2x1_1bit:inst.e1
+ck => Pratica05_DFF_1_bit:inst2.ck
+rst => Pratica05_DFF_1_bit:inst2.rst
+
+
+|Pratica05_reg_5_bits|Pratica05_reg_1_bit:inst5|Pratica05_DFF_1_bit:inst2
+saida <= inst.DB_MAX_OUTPUT_PORT_TYPE
+rst => inst2.IN0
+ck => inst.CLK
+d => inst.DATAIN
+
+
+|Pratica05_reg_5_bits|Pratica05_reg_1_bit:inst5|Pratica02_mux_2x1_1bit:inst
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+c => inst3.IN0
+c => inst.IN0
+e1 => inst3.IN1
+e0 => inst2.IN0
+
+

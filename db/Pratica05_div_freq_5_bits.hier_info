@@ -1,0 +1,44 @@
+|Pratica05_div_freq_5_bits
+q[0] <= Pratica05_div_freq_1_bit:inst.saida
+q[1] <= Pratica05_div_freq_1_bit:inst1.saida
+q[2] <= Pratica05_div_freq_1_bit:inst2.saida
+q[3] <= Pratica05_div_freq_1_bit:inst3.saida
+q[4] <= Pratica05_div_freq_1_bit:inst4.saida
+ck => Pratica05_div_freq_1_bit:inst.ck
+rst => Pratica05_div_freq_1_bit:inst.rst
+rst => Pratica05_div_freq_1_bit:inst1.rst
+rst => Pratica05_div_freq_1_bit:inst2.rst
+rst => Pratica05_div_freq_1_bit:inst3.rst
+rst => Pratica05_div_freq_1_bit:inst4.rst
+
+
+|Pratica05_div_freq_5_bits|Pratica05_div_freq_1_bit:inst
+saida <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+rst => inst3.IN0
+ck => inst2.CLK
+
+
+|Pratica05_div_freq_5_bits|Pratica05_div_freq_1_bit:inst1
+saida <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+rst => inst3.IN0
+ck => inst2.CLK
+
+
+|Pratica05_div_freq_5_bits|Pratica05_div_freq_1_bit:inst2
+saida <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+rst => inst3.IN0
+ck => inst2.CLK
+
+
+|Pratica05_div_freq_5_bits|Pratica05_div_freq_1_bit:inst3
+saida <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+rst => inst3.IN0
+ck => inst2.CLK
+
+
+|Pratica05_div_freq_5_bits|Pratica05_div_freq_1_bit:inst4
+saida <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+rst => inst3.IN0
+ck => inst2.CLK
+
+

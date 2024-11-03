@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/rickc/Downloads/CircuitosDigitais/CircuitosDigitais/Pratica04_Full_Adder.bdf
+source_file = 1, C:/Users/rickc/Downloads/CircuitosDigitais/CircuitosDigitais/Waveform3.vwf
+source_file = 1, C:/Users/rickc/Downloads/CircuitosDigitais/CircuitosDigitais/db/Pratica04_Full_Adder.cbx.xml
+source_file = 1, c:/altera/13.1/quartus/libraries/others/maxplus2/xor3.bdf
+design_name = Pratica04_Full_Adder
+instance = comp, \sum~output , sum~output, Pratica04_Full_Adder, 1
+instance = comp, \cout~output , cout~output, Pratica04_Full_Adder, 1
+instance = comp, \a~input , a~input, Pratica04_Full_Adder, 1
+instance = comp, \c~input , c~input, Pratica04_Full_Adder, 1
+instance = comp, \b~input , b~input, Pratica04_Full_Adder, 1
+instance = comp, \inst6~0 , inst6~0, Pratica04_Full_Adder, 1
+instance = comp, \inst7|1~0 , inst7|1~0, Pratica04_Full_Adder, 1

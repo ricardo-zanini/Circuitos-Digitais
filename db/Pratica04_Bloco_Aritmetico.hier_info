@@ -1,0 +1,150 @@
+|Pratica04_Bloco_Aritmetico
+cout <= Pratica04_Adder_4bits:inst2.cout
+c0 => Pratica04_Adder_4bits:inst2.cin
+c0 => Pratica04_xor2_4bits:inst1.c0
+c1 => Pratica04_and2_4bits:inst.c0
+a[0] => Pratica04_and2_4bits:inst.a[0]
+a[1] => Pratica04_and2_4bits:inst.a[1]
+a[2] => Pratica04_and2_4bits:inst.a[2]
+a[3] => Pratica04_and2_4bits:inst.a[3]
+b[0] => Pratica04_xor2_4bits:inst1.a[0]
+b[1] => Pratica04_xor2_4bits:inst1.a[1]
+b[2] => Pratica04_xor2_4bits:inst1.a[2]
+b[3] => Pratica04_xor2_4bits:inst1.a[3]
+s[0] <= Pratica04_Adder_4bits:inst2.s[0]
+s[1] <= Pratica04_Adder_4bits:inst2.s[1]
+s[2] <= Pratica04_Adder_4bits:inst2.s[2]
+s[3] <= Pratica04_Adder_4bits:inst2.s[3]
+
+
+|Pratica04_Bloco_Aritmetico|Pratica04_Adder_4bits:inst2
+cout <= Pratica04_Full_Adder:inst4.cout
+cin => Pratica04_Full_Adder:inst.a
+a[0] => Pratica04_Full_Adder:inst.b
+a[1] => Pratica04_Full_Adder:inst2.b
+a[2] => Pratica04_Full_Adder:inst3.b
+a[3] => Pratica04_Full_Adder:inst4.b
+b[0] => Pratica04_Full_Adder:inst.c
+b[1] => Pratica04_Full_Adder:inst2.c
+b[2] => Pratica04_Full_Adder:inst3.c
+b[3] => Pratica04_Full_Adder:inst4.c
+s[0] <= Pratica04_Full_Adder:inst.sum
+s[1] <= Pratica04_Full_Adder:inst2.sum
+s[2] <= Pratica04_Full_Adder:inst3.sum
+s[3] <= Pratica04_Full_Adder:inst4.sum
+
+
+|Pratica04_Bloco_Aritmetico|Pratica04_Adder_4bits:inst2|Pratica04_Full_Adder:inst4
+sum <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst4.IN0
+b => inst.IN1
+b => inst5.IN0
+b => inst3.IN1
+c => inst6.IN1
+c => inst5.IN1
+c => inst4.IN1
+cout <= XOR3:inst7.OUT
+
+
+|Pratica04_Bloco_Aritmetico|Pratica04_Adder_4bits:inst2|Pratica04_Full_Adder:inst4|XOR3:inst7
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|Pratica04_Bloco_Aritmetico|Pratica04_Adder_4bits:inst2|Pratica04_Full_Adder:inst3
+sum <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst4.IN0
+b => inst.IN1
+b => inst5.IN0
+b => inst3.IN1
+c => inst6.IN1
+c => inst5.IN1
+c => inst4.IN1
+cout <= XOR3:inst7.OUT
+
+
+|Pratica04_Bloco_Aritmetico|Pratica04_Adder_4bits:inst2|Pratica04_Full_Adder:inst3|XOR3:inst7
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|Pratica04_Bloco_Aritmetico|Pratica04_Adder_4bits:inst2|Pratica04_Full_Adder:inst2
+sum <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst4.IN0
+b => inst.IN1
+b => inst5.IN0
+b => inst3.IN1
+c => inst6.IN1
+c => inst5.IN1
+c => inst4.IN1
+cout <= XOR3:inst7.OUT
+
+
+|Pratica04_Bloco_Aritmetico|Pratica04_Adder_4bits:inst2|Pratica04_Full_Adder:inst2|XOR3:inst7
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|Pratica04_Bloco_Aritmetico|Pratica04_Adder_4bits:inst2|Pratica04_Full_Adder:inst
+sum <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst3.IN0
+a => inst4.IN0
+b => inst.IN1
+b => inst5.IN0
+b => inst3.IN1
+c => inst6.IN1
+c => inst5.IN1
+c => inst4.IN1
+cout <= XOR3:inst7.OUT
+
+
+|Pratica04_Bloco_Aritmetico|Pratica04_Adder_4bits:inst2|Pratica04_Full_Adder:inst|XOR3:inst7
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|Pratica04_Bloco_Aritmetico|Pratica04_and2_4bits:inst
+s[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => inst.IN0
+a[1] => inst3.IN0
+a[2] => inst4.IN0
+a[3] => inst5.IN0
+c0 => inst.IN1
+c0 => inst3.IN1
+c0 => inst4.IN1
+c0 => inst5.IN1
+
+
+|Pratica04_Bloco_Aritmetico|Pratica04_xor2_4bits:inst1
+s[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => inst.IN0
+a[1] => inst1.IN0
+a[2] => inst2.IN0
+a[3] => inst3.IN0
+c0 => inst.IN1
+c0 => inst1.IN1
+c0 => inst2.IN1
+c0 => inst3.IN1
+
+

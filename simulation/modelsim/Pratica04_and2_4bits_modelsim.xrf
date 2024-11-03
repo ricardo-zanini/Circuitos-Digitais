@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/aluno/Desktop/CircuitosDigitais/Pratica04_and2_4bits.bdf
+source_file = 1, C:/Users/aluno/Desktop/CircuitosDigitais/db/Pratica04_and2_4bits.cbx.xml
+design_name = Pratica04_and2_4bits
+instance = comp, \s3~output\, s3~output, Pratica04_and2_4bits, 1
+instance = comp, \s2~output\, s2~output, Pratica04_and2_4bits, 1
+instance = comp, \s1~output\, s1~output, Pratica04_and2_4bits, 1
+instance = comp, \s0~output\, s0~output, Pratica04_and2_4bits, 1
+instance = comp, \c0~input\, c0~input, Pratica04_and2_4bits, 1
+instance = comp, \a[3]~input\, a[3]~input, Pratica04_and2_4bits, 1
+instance = comp, \a[2]~input\, a[2]~input, Pratica04_and2_4bits, 1
+instance = comp, \a[1]~input\, a[1]~input, Pratica04_and2_4bits, 1
+instance = comp, \a[0]~input\, a[0]~input, Pratica04_and2_4bits, 1
